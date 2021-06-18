@@ -54,6 +54,10 @@ const hoursWorkedOnDate = (employee, date) => {
       return (timeOut.hour - timeIn.hour) / 100;                                              
 };
 
+const wagesEarnedOnDate = (employee, date) => {
+    return parseInt(hoursWorkedOnDate(employee, date)) * parseInt(employee.payPerHour);
+};
+
 let allWagesFor = function () {
     let eligibleDates = this.timeInEvents.map(function (e) {
         return e.date
