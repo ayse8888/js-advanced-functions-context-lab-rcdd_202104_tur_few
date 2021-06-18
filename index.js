@@ -48,6 +48,12 @@ const createTimeOutEvent = (employee, date) => {
     return employee;
 };
 
+const hoursWorkedOnDate = (employee, date) => {
+    let timeIn = employee.timeInEvents.find(time => time.date === date);              
+    let timeOut = employee.timeOutEvents.find(time => time.date === date);             
+      return (timeOut.hour - timeIn.hour) / 100;                                              
+};
+
 let allWagesFor = function () {
     let eligibleDates = this.timeInEvents.map(function (e) {
         return e.date
