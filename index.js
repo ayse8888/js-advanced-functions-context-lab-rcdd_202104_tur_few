@@ -12,6 +12,7 @@ function createEmployeeRecord(name){
   }
   return newObj
 }
+
 const createEmployeeRecords = (array) => {
     return array.map(arr => {
         return createEmployeeRecord(arr);
