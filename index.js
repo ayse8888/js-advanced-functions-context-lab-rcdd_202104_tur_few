@@ -54,8 +54,8 @@ const hoursWorkedOnDate = (ate) => {
       return (timeOut.hour - timeIn.hour) / 100;                                              
 };
 
-const wagesEarnedOnDate = (employee, date) => {
-    return parseInt(hoursWorkedOnDate(employee, date)) * parseInt(employee.payPerHour);
+const wagesEarnedOnDate = (date) => {
+    return parseInt(hoursWorkedOnDate(date)) * parseInt(employee.payPerHour);
 };
 
 let allWagesFor = function () {
