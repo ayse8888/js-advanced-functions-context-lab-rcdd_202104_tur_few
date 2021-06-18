@@ -30,6 +30,15 @@ const createEmployeeRecords = (arr) => {
     return employeeRecordArray;
 };
 
+const createTimeInEvent = (employee, date) => {
+    employee.timeInEvents.push({
+      type: 'TimeIn',
+      hour: parseInt(date.split(' ')[1]),
+      date: date.split(' ')[0],
+});  
+    return employee;
+};
+
 let allWagesFor = function () {
     let eligibleDates = this.timeInEvents.map(function (e) {
         return e.date
