@@ -55,7 +55,7 @@ const hoursWorkedOnDate = (ate) => {
 };
 
 const wagesEarnedOnDate = (date) => {
-    return parseInt(hoursWorkedOnDate(date)) * parseInt(employee.payPerHour);
+    return parseInt(hoursWorkedOnDate(this,date)) * parseInt(this.payPerHour);
 };
 
 let allWagesFor = function () {
