@@ -48,7 +48,7 @@ const createTimeOutEvent = (ate) => {
     return this;
 };
 
-const hoursWorkedOnDate = (employee, date) => {
+const hoursWorkedOnDate = (ate) => {
     let timeIn = employee.timeInEvents.find(time => time.date === date);              
     let timeOut = employee.timeOutEvents.find(time => time.date === date);             
       return (timeOut.hour - timeIn.hour) / 100;                                              
