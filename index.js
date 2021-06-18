@@ -31,7 +31,7 @@ const createEmployeeRecords = (arr) => {
 };
 
 const createTimeInEvent = (date) => {
-    employee.timeInEvents.push({
+    this.timeInEvents.push({
       type: 'TimeIn',
       hour: parseInt(date.split(' ')[1]),
       date: date.split(' ')[0],
