@@ -9,7 +9,7 @@
  for you to use if you need it!
  */
  
-function createEmployeeRecord(name){
+function createEmployeeRecords(name){
   console.log(name)
   let newObj = {
     firstName : name[0],
