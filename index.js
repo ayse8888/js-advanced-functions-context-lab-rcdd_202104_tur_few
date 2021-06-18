@@ -22,6 +22,14 @@ function createEmployeeRecord(name){
   return newObj
 }
 
+const createEmployeeRecords = (arr) => {
+    let employeeRecordArray = [];
+    for(let i = 0; i < arr.length; i++){
+      employeeRecordArray.push(createEmployeeRecord(arr[i]));
+    }
+    return employeeRecordArray;
+};
+
 let allWagesFor = function () {
     let eligibleDates = this.timeInEvents.map(function (e) {
         return e.date
