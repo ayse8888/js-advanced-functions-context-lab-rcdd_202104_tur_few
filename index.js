@@ -39,13 +39,13 @@ const createTimeInEvent = (date) => {
     return this;
 };
 
-const createTimeOutEvent = (employee, date) => {
-    employee.timeOutEvents.push({
+const createTimeOutEvent = (ate) => {
+    this.timeOutEvents.push({
       type: 'TimeOut',
       hour: parseInt(date.split(' ')[1]),
       date: date.split(' ')[0],
 });  
-    return employee;
+    return this;
 };
 
 const hoursWorkedOnDate = (employee, date) => {
