@@ -70,6 +70,6 @@ let allWagesFor = function () {
     return payable
 }
 
-const findEmployeeByFirstName = (employees, name) => {
+const findEmployeeByFirstName = (srcArray, name) => {
     return employees.find(employee => employee.firstName === name);
 };
