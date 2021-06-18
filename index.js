@@ -36,7 +36,7 @@ const createTimeInEvent = (date) => {
       hour: parseInt(date.split(' ')[1]),
       date: date.split(' ')[0],
 });  
-    return employee;
+    return this;
 };
 
 const createTimeOutEvent = (employee, date) => {
