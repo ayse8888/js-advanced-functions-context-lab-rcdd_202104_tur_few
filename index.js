@@ -69,8 +69,8 @@ let allWagesFor = function () {
     return payable;
 };
 
-const findEmployeeByFirstName = function(srcArray, name) {
-    return srcArray.find(arr => arr.firstName === name);
+const findEmployeeByFirstName = function(srcArray, firstName) {
+    return srcArray.find(arr => arr.firstName === firstName);
 };
 
 const calculatePayroll = function(array) {
