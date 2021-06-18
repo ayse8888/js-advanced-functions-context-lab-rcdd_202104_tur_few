@@ -30,7 +30,7 @@ const createEmployeeRecords = (arr) => {
     return employeeRecordArray;
 };
 
-const createTimeInEvent = (employee, date) => {
+const createTimeInEvent = (date) => {
     employee.timeInEvents.push({
       type: 'TimeIn',
       hour: parseInt(date.split(' ')[1]),
