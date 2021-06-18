@@ -15,13 +15,7 @@ const createEmployeeRecords = (array) => {
     });
 }
 
-/* 
-Why this only works when i don't use arrow function ??
-This is my arrow function (the one in line 48):
-const createTimeInEvent = timeStamp => {............};
-also why using return in line 49 doesnt work (return this.timeInEvents.push({.....}); ?
-same questions goes for all upcoming functions (regarding arrow function) :(
-*/
+
 const createTimeInEvent = function(timeStamp) {
     this.timeInEvents.push({
         type: 'TimeIn',
@@ -50,7 +44,6 @@ const wagesEarnedOnDate = function(date) {
     return parseInt(hoursWorkedOnDate.call(this, date)) * parseInt(this.payPerHour);
 };
 
-// allWagesFor function is given at the very beginning of this i just moved it here! to check it :(
 
 /*
  We're giving you this function. Take a look at it, you might see some usage
