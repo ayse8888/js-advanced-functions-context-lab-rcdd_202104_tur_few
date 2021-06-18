@@ -20,20 +20,20 @@ const createEmployeeRecords = (array) => {
 }
 
 
-const createTimeInEvent = function(timeStamp) {
+const createTimeInEvent = function(date) {
     this.timeInEvents.push({
         type: 'TimeIn',
-        hour: parseInt(timeStamp.split(' ')[1]),
-        date: timeStamp.split(' ')[0]
+        hour: parseInt(date.split(' ')[1]),
+        date: date.split(' ')[0]
     });
     return this;
 };
 
-const createTimeOutEvent = function(timeStamp) {
+const createTimeOutEvent = function(date) {
     this.timeOutEvents.push({
         type: 'TimeOut',
-        hour: parseInt(timeStamp.split(' ')[1]),
-        date: timeStamp.split(' ')[0]
+        hour: parseInt(date.split(' ')[1]),
+        date: date.split(' ')[0]
     });
     return this;
 };
