@@ -1,14 +1,17 @@
-const createEmployeeRecord = (arr) => {
-    return {
-        firstName: arr[0],
-        familyName: arr[1],
-        title: arr[2],
-        payPerHour: arr[3],
-        timeInEvents: [],
-        timeOutEvents: [],
-    }
-};
+let nameArr = ["ayse","basar","ms", 5];
 
+function createEmployeeRecord(name){
+  console.log(name)
+  let newObj = {
+    firstName : name[0],
+    familyName : name[1],
+    title : name[2],
+    payPerHour : name[3],
+    timeInEvents : [],
+    timeOutEvents : []
+  }
+  return newObj
+}
 const createEmployeeRecords = (array) => {
     return array.map(arr => {
         return createEmployeeRecord(arr);
